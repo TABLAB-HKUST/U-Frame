@@ -1,6 +1,11 @@
 # Weakly-supervised deep generative network for complex image restoration and style transformation (WeCREST)
 WeCREST is a weakly supervised framework for complex image transfomation including fluorescence image restoration with low signal-to-noise ratio, image resolution recovery, virtual histological staining, etc. This is a pytorch implementation of WeCREST. 
 
+##  Prepare the dataset for training
+```python
+python dataset_prepare.py 
+```
+
 ##  Train a model
 ```python
 python train.py 
