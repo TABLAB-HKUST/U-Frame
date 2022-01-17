@@ -2,11 +2,13 @@
 WeCREST is a weakly supervised framework for complex image transfomation including fluorescence image restoration with low signal-to-noise ratio, image resolution recovery, virtual histological staining, etc. This is a pytorch implementation of WeCREST. 
 
 ##  Prepare the dataset for training
+To prepare the dataset from the raw data, run the following script:
 ```python
 python dataset_prepare.py 
 ```
 
 ##  Train a model
+To train a model with prepared dataset, run as:
 ```python
 python train.py 
 ```
@@ -41,6 +43,7 @@ python train.py
 ```--tv_dir```	The folder for displaying the results during training.
 
 ## Test a model
+To test images with a trained model, run as:
 ```python
 python test.py 
 ```
