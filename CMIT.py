@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import os
 
-class CMIT(nn.Module):
+class wecrest(nn.Module):
     def __init__(self,opt,Nclass):
         super(CMIT, self).__init__()
         self.gen_a = Gen(opt.input_dim)  # auto-encoder for domain a
