@@ -6,6 +6,12 @@ To prepare the dataset from the raw data, run the following script:
 ```python
 python dataset_prepare.py 
 ```
+### Options:
+```--source```	Path of source image.
+```--target```	Path of target image.
+```--output```	Path of output folder.
+```--tol```	Tolerance size, i.e. the size of exculsive regions.
+
 
 ##  Train a model
 To train a model with prepared dataset, run as:
