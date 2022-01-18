@@ -74,7 +74,7 @@ In this example, we use a pre-trained model for low-SNR restoration of planaria.
 python test.py --input examples/planaria --ckp planaria --output results/planaria --input_dim 1
 ```
 The results will be shown in the specified folder.                
-![alt text](https://github.com/weixingdai/CMIT/blob/ab8537d8ab55bf15d2b12e0df6b199901a4c915b/examples/planaria/input.png)
+![alt text](https://github.com/TABLAB-HKUST/WeCREST/blob/bb34aa78773ad8c65ea3c415cca6347ade56e65e/examples/planaria/input.png)
 ![alt text](https://github.com/weixingdai/CMIT/blob/94d5b8cc787bdf0c04446403c4d1c1f6f71c36cd/results/planaria/fake_cmit_input.png)
 ![alt text](https://github.com/weixingdai/CMIT/blob/f58098440e8f84e6970808851e2c76fc53b07e06/examples/planaria%20ground%20truth/gt.png)
 
