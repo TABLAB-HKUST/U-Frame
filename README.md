@@ -8,8 +8,11 @@ python dataset_prepare.py
 ```
 ### Options:
 ```--source```	Path of source image.
+
 ```--target```	Path of target image.
+
 ```--output```	Path of output folder.
+
 ```--tol```	Tolerance size, i.e. the size of exculsive regions.
 
 
