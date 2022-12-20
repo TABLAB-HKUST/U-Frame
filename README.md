@@ -1,5 +1,5 @@
-# Weakly-supervised deep generative network for complex image restoration and style transformation (WeCREST)
-WeCREST is a weakly supervised framework for complex image transfomation including fluorescence image restoration with low signal-to-noise ratio, image resolution recovery, virtual histological staining, etc. This is a pytorch implementation of WeCREST. 
+# Exceeding the limit for microscopic image transformation with a deep learning-based unified framework   
+This is a pytorch implementation of U-Frame, which is proposed in "Exceeding the limit for microscopic image transformation with a deep learning-based unified framework". U-Frame a unified framework that unifies supervised and unsupervised learning for microscopic image transformation, including pseudo optical sectioning, virtual histological staining, improvement of signal-to-noise ratio or resolution, prediction of fluorescent labels, etc. 
 
 ##  Prepare the dataset for training
 To prepare the dataset from the raw data, run the following script:
@@ -78,5 +78,5 @@ The results will be shown in the specified folder.
 ![alt text](https://github.com/weixingdai/CMIT/blob/94d5b8cc787bdf0c04446403c4d1c1f6f71c36cd/results/planaria/fake_cmit_input.png)
 ![alt text](https://github.com/TABLAB-HKUST/WeCREST/blob/c60dd08b52062b885b0190bef5133f7b473ce18f/examples/planaria%20ground%20truth/gt.png)
 
-Left: low-SNR image of planaria. Middle: image restored by WeCREST.  Right:  ground truth.
+Left: low-SNR image of planaria. Middle: image restored by U-Frame.  Right:  ground truth.
 
