@@ -19,7 +19,7 @@ class Dis(nn.Module):
         for _ in range(self.num_scales):
             self.cnns.append(self._make_net(Nsam))
         self.logsoft=torch.nn.LogSoftmax(dim=1)
-        self.gamma=opt.gamma#2.0
+        self.gamma=opt.gamma
 
     def _make_net(self,Nsam):
         dim = self.dim
