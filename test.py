@@ -15,7 +15,7 @@ if __name__ == '__main__':
     parser.add_argument('--ckp', type=str, default='breast001', help='checkpoint folder name.')
     parser.add_argument('--output', type=str, default='results/breast001_cmit', help='output folder name.')
     parser.add_argument('--input_dim', type=int, default=3, help='number of input channels')
-    parser.add_argument('--sobel', action='store_true',help='whether use sobel features or not.') # --sobel to use sobel, default is not using sobel.
+    parser.add_argument('--sobel', action='store_true',help='whether use sobel features or not.') # --sobel to use sobel.
     opts = parser.parse_args()
 
     checkpoint_name=opts.ckp
