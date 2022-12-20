@@ -184,7 +184,7 @@ def weights_init(init_type='gaussian'):
             else:
                 assert 0, "Unsupported initialization: {}".format(init_type)
             if hasattr(m, 'bias') and m.bias is not None:
-                nn.init.constant_(m.bias.data, 0.0)
+                nn.init.constant_(m.bias.data, 0.0) #
 
     return init_fun
 
