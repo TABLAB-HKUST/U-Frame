@@ -2,6 +2,7 @@ import os
 import cv2 
 import argparse
 import numpy as np
+# data preparation
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
