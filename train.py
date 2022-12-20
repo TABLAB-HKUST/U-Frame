@@ -2,7 +2,7 @@ import argparse
 import torch
 import os
 import time
-from wecrest import wecrest
+from uframe import uframe
 from utils import save_image,get_data_list,get_image,af2rgb
 import shutil
 import cv2
@@ -53,8 +53,8 @@ if __name__ == '__main__':
     Nsample=cinfo.shape[0]
     print(cinfo.shape,prob.shape,Nsample,Nclass)
 
-    cmit = wecrest(opts,Nclass)
-    cmit.cuda()
+    model = uframe(opts,Nclass)
+    model.cuda()
     
     iter_per_epoch=int(max(opts.iter,Nsample)/opts.batch_size)
 
@@ -92,13 +92,13 @@ if __name__ == '__main__':
             images_b=images_b[:,:opts.input_dim,:,:]
             images_a=images_a.cuda().detach()
             images_b=images_b.cuda().detach()
-            cmit.set_input(opts.batch_size,cinfoi)
-            cmit.dis_update(images_a, images_b)
-            cmit.gen_update(images_a, images_b)
-        cmit.update_learning_rate()
+            model.set_input(opts.batch_size,cinfoi)
+            model.dis_update(images_a, images_b)
+            model.gen_update(images_a, images_b)
+        model.update_learning_rate()
         torch.cuda.synchronize()
         print('End of epoch %d / %d \t Time Taken: %d sec' % (epoch, opts.n_epochs + opts.n_epochs_decay, time.time() - epoch_start_time))
-        save_image(cmit.get_fake_b(images_a),images_a,images_b,opts.tb_dir,epoch)
-    cmit.save(checkpoint_folder,save_mode=opts.save_mode)
+        save_image(model.get_fake_b(images_a),images_a,images_b,opts.tb_dir,epoch)
+    model.save(checkpoint_folder,save_mode=opts.save_mode)
     shutil.rmtree(dataroot_new, ignore_errors=True) 
     print('Training finished.')
