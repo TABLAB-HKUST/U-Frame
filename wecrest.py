@@ -4,9 +4,9 @@ import torch
 import torch.nn as nn
 import os
 
-class wecrest(nn.Module):
+class uframe(nn.Module):
     def __init__(self,opt,Nclass):
-        super(wecrest, self).__init__()
+        super(uframe, self).__init__()
         self.gen_a = Gen(opt.input_dim)  # auto-encoder for domain a
         self.gen_b = Gen(opt.input_dim)  # auto-encoder for domain b
         self.dis_a = Dis(Nsam=Nclass+1,opt=opt)  # discriminator for domain a
