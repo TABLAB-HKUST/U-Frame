@@ -21,7 +21,7 @@ The pre-trained model can be downloaded here : [link](https://drive.google.com/f
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1D1adNkxteuwf7tXHwQN_BMFrnQzgqjJT/view?usp=sharing)
 
 ### 4. Prediction of fluorescent labels from phase contrast images:
-![alt text]()
+![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/3fc619108cf9ab670ab845792ec6f39cb6becc8f/examples/fluo_yusha.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/10cWMDy-sMWBeJHTV1FPg6Fx6jzikFeaO/view?usp=sharing)
 
 ### 5. Super-resolution:
