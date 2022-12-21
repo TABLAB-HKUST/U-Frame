@@ -84,7 +84,8 @@ To test images with a trained model, run as:
 ```python
 python test.py 
 ```
-For example, here are the steps to improve the SNR of planaria images:
+For example, here are the steps to improve the SNR of planaria images using pre-trained U-Frame model:
+
 First, download the pre-trained model and put it in ./checkpoints/planaria. Then run the following script to get the results:
 ```python
 python test.py --input examples/planaria --ckp planaria --output results/planaria --input_dim 1
