@@ -9,7 +9,7 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link)
 
 ### 2. Style transformation from autofluorescence images to histochemically stained images:
-![alt text]()
+![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/f93de198959810d6927e9b15699f01e2ca2640cc/examples/virtualstaining.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1ENfFuSBBl2yndMYy5MRXZwdloIK4qmNB/view?usp=sharing)
 
 ### 3. Improvement of signal-to-noise ratio:
