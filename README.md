@@ -16,17 +16,18 @@ The pre-trained model can be downloaded here : [link](https://drive.google.com/f
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/11d9a3767a8c5a3c570fec9fee9ab4cd1ec35cb7/examples/planaria.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1Kwo4E980RCSC4HzDDUl0l3NrBay6QLeE/view?usp=sharing)
 
-### 4. Prediction of fluorescent labels from brightfield images:
+### 4. Improvement of resolution:
+![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/78105b47d0c83b449407fcb01417c12ae68c198d/examples/sr.jpg)
+The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1NXmU-16lwYadBK0TqHn2xTuMlJ4aCXYU/view?usp=sharing)
+
+### 5. Prediction of fluorescent labels from brightfield images:
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/130ed89fa391d33df40a372d4b6afa242e769174/examples/fluo_rubin.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1D1adNkxteuwf7tXHwQN_BMFrnQzgqjJT/view?usp=sharing)
 
-### 4. Prediction of fluorescent labels from phase contrast images:
+### 6. Prediction of fluorescent labels from phase contrast images:
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/3fc619108cf9ab670ab845792ec6f39cb6becc8f/examples/fluo_yusha.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/10cWMDy-sMWBeJHTV1FPg6Fx6jzikFeaO/view?usp=sharing)
 
-### 5. Improvement of resolution:
-![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/78105b47d0c83b449407fcb01417c12ae68c198d/examples/sr.jpg)
-The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1NXmU-16lwYadBK0TqHn2xTuMlJ4aCXYU/view?usp=sharing)
 
 ##  Prepare the dataset for training
 To prepare the dataset from the raw data, run the following script:
