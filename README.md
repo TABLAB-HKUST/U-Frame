@@ -9,8 +9,12 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link)
 
 ### 2. Style transformation from autofluorescence images to histochemically stained images
+![alt text]()
+The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1ENfFuSBBl2yndMYy5MRXZwdloIK4qmNB/view?usp=sharing)
 
 ### 3. Improvement of signal-to-noise ratio
+![alt text]()
+The pre-trained model can be downloaded here : [link]()
 
 ##  Prepare the dataset for training
 To prepare the dataset from the raw data, run the following script:
