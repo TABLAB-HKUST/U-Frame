@@ -4,15 +4,23 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/5716133a2923db79e19440841a843c5189156253/examples/fig%201.jpg)
 
 ## Applications and examples
-### 1. Image transformations from widefield images to confocal images
+### 1. Image transformations from widefield images to confocal images:
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/75238f78834a46b836d77428cc71552e65fd23e9/examples/confocal.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link)
 
-### 2. Style transformation from autofluorescence images to histochemically stained images
+### 2. Style transformation from autofluorescence images to histochemically stained images:
 ![alt text]()
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1ENfFuSBBl2yndMYy5MRXZwdloIK4qmNB/view?usp=sharing)
 
-### 3. Improvement of signal-to-noise ratio
+### 3. Improvement of signal-to-noise ratio:
+![alt text]()
+The pre-trained model can be downloaded here : [link]()
+
+### 4. Prediction of fluorescent labels from unlabeled images:
+![alt text]()
+The pre-trained model can be downloaded here : [link]()
+
+### 5. Super-resolution:
 ![alt text]()
 The pre-trained model can be downloaded here : [link]()
 
