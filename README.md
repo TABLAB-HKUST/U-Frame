@@ -24,7 +24,7 @@ The pre-trained model can be downloaded here : [link](https://drive.google.com/f
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/3fc619108cf9ab670ab845792ec6f39cb6becc8f/examples/fluo_yusha.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/10cWMDy-sMWBeJHTV1FPg6Fx6jzikFeaO/view?usp=sharing)
 
-### 5. Super-resolution:
+### 5. Improvement of resolution:
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/78105b47d0c83b449407fcb01417c12ae68c198d/examples/sr.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1NXmU-16lwYadBK0TqHn2xTuMlJ4aCXYU/view?usp=sharing)
 
