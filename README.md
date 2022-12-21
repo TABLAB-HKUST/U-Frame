@@ -4,27 +4,27 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/5716133a2923db79e19440841a843c5189156253/examples/fig%201.jpg)
 
 ## Applications and examples
-- ### (1) Image transformations from widefield images to confocal images:
+- ### (1) Image transformations from widefield images to confocal images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/0386d9651f2dae6de5f369203a4d199fd581a47d/examples/confocal2.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link)
 
-- ### (2) Style transformation from autofluorescence images to histochemically stained images:
+- ### (2) Style transformation from autofluorescence images to histochemically stained images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/f93de198959810d6927e9b15699f01e2ca2640cc/examples/virtualstaining.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1ENfFuSBBl2yndMYy5MRXZwdloIK4qmNB/view?usp=sharing)
 
-- ### (3) Improvement of signal-to-noise ratio:
+- ### (3) Improvement of signal-to-noise ratio
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/11d9a3767a8c5a3c570fec9fee9ab4cd1ec35cb7/examples/planaria.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1Kwo4E980RCSC4HzDDUl0l3NrBay6QLeE/view?usp=sharing)
 
-- ### (4) Improvement of resolution:
+- ### (4) Improvement of resolution
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/78105b47d0c83b449407fcb01417c12ae68c198d/examples/sr.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1NXmU-16lwYadBK0TqHn2xTuMlJ4aCXYU/view?usp=sharing)
 
-- ### (5) Prediction of fluorescent labels from brightfield images:
+- ### (5) Prediction of fluorescent labels from brightfield images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/130ed89fa391d33df40a372d4b6afa242e769174/examples/fluo_rubin.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1D1adNkxteuwf7tXHwQN_BMFrnQzgqjJT/view?usp=sharing)
 
-- ### (6) Prediction of fluorescent labels from phase contrast images:
+- ### (6) Prediction of fluorescent labels from phase contrast images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/3fc619108cf9ab670ab845792ec6f39cb6becc8f/examples/fluo_yusha.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/10cWMDy-sMWBeJHTV1FPg6Fx6jzikFeaO/view?usp=sharing)
 
