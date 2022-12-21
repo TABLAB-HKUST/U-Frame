@@ -17,7 +17,7 @@ The pre-trained model can be downloaded here : [link](https://drive.google.com/f
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1Kwo4E980RCSC4HzDDUl0l3NrBay6QLeE/view?usp=sharing)
 
 ### 4. Prediction of fluorescent labels from brightfield images:
-![alt text]()
+![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/130ed89fa391d33df40a372d4b6afa242e769174/examples/fluo_rubin.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/1D1adNkxteuwf7tXHwQN_BMFrnQzgqjJT/view?usp=sharing)
 
 ### 4. Prediction of fluorescent labels from phase contrast images:
