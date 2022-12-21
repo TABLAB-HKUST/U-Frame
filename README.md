@@ -6,7 +6,7 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 ## Applications
 ### Image transformations from widefield images to confocal images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/75238f78834a46b836d77428cc71552e65fd23e9/examples/confocal.jpg)
-The pre-trained model can be downloaded here : [link]([https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link])
+The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link)
 
 ### Style transformation from autofluorescence images to histochemically stained images
 
