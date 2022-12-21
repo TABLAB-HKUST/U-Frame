@@ -3,13 +3,14 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/5716133a2923db79e19440841a843c5189156253/examples/fig%201.jpg)
 
-## Applications
+## Applications and examples
 ### 1. Image transformations from widefield images to confocal images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/75238f78834a46b836d77428cc71552e65fd23e9/examples/confocal.jpg)
 The pre-trained model can be downloaded here : [link](https://drive.google.com/file/d/13fiLkuUmXAznJ76H5ZcOGBYWBOC4Aplq/view?usp=share_link)
 
-### Style transformation from autofluorescence images to histochemically stained images
+### 2. Style transformation from autofluorescence images to histochemically stained images
 
+### 3. Improvement of signal-to-noise ratio
 
 ##  Prepare the dataset for training
 To prepare the dataset from the raw data, run the following script:
@@ -66,6 +67,11 @@ To test images with a trained model, run as:
 ```python
 python test.py 
 ```
+Download the pre-trained model and put it in ./checkpoints/planaria. Run the following script to get the results:
+```python
+python test.py --input examples/planaria --ckp planaria --output results/planaria --input_dim 1
+```
+
 ### Options:
 ```--input```	Input folder name.
 
@@ -76,17 +82,3 @@ python test.py
 ```--input_dim```	Number of input channels.
 
 ```--sobel```	Whether use sobel feature.
-
-## Examples
-### Low-SNR restoration of planaria
-In this example, we use a pre-trained model for low-SNR restoration of planaria. The pre-trained model can be found in ./checkpoints/planaria. Run the following script:
-```python
-python test.py --input examples/planaria --ckp planaria --output results/planaria --input_dim 1
-```
-The results will be shown in the specified folder.                
-![alt text](https://github.com/TABLAB-HKUST/WeCREST/blob/bb34aa78773ad8c65ea3c415cca6347ade56e65e/examples/planaria/input.png)
-![alt text](https://github.com/weixingdai/CMIT/blob/94d5b8cc787bdf0c04446403c4d1c1f6f71c36cd/results/planaria/fake_cmit_input.png)
-![alt text](https://github.com/TABLAB-HKUST/WeCREST/blob/c60dd08b52062b885b0190bef5133f7b473ce18f/examples/planaria%20ground%20truth/gt.png)
-
-Left: low-SNR image of planaria. Middle: image restored by U-Frame.  Right:  ground truth.
-
