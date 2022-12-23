@@ -1,7 +1,7 @@
 # Exceeding the Limit for Microscopic Image Transformation with a Deep Learning-based Unified Framework   
 This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit for Microscopic Image Transformation with a Deep Learning-based Unified Framework". U-Frame is a unified framework that unifies supervised and unsupervised learning for microscopic image transformation, including pseudo optical sectioning, virtual histological staining, improvement of signal-to-noise ratio or resolution, prediction of fluorescent labels, etc. 
 
-![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/67dd86eeac45371a7812a95ad1045ad3dc3f9eac/examples/fig1ab.jpg)
+![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/4acf45520b442979dc8e6e7e606898ab64d85533/examples/fig%201a%20new.jpg)
 
 ## Applications and examples
 - ### (1) Image transformations from widefield images to confocal images
