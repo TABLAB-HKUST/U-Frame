@@ -6,78 +6,39 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 ## Applications and examples
 - ### (1) Image transformations from widefield images to confocal images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/0386d9651f2dae6de5f369203a4d199fd581a47d/examples/confocal2.jpg)
-The pre-trained model can be downloaded here : [link]()
 
 - ### (2) Style transformation from autofluorescence images to histochemically stained images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/f93de198959810d6927e9b15699f01e2ca2640cc/examples/virtualstaining.jpg)
-The pre-trained model can be downloaded here : [link]()
 
 - ### (3) Improvement of signal-to-noise ratio
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/11d9a3767a8c5a3c570fec9fee9ab4cd1ec35cb7/examples/planaria.jpg)
-The pre-trained model can be downloaded here : [link]()
 
 - ### (4) Improvement of resolution
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/78105b47d0c83b449407fcb01417c12ae68c198d/examples/sr.jpg)
-The pre-trained model can be downloaded here : [link]()
 
 - ### (5) Prediction of fluorescent labels from brightfield images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/130ed89fa391d33df40a372d4b6afa242e769174/examples/fluo_rubin.jpg)
-The pre-trained model can be downloaded here : [link]()
 
 - ### (6) Prediction of fluorescent labels from phase contrast images
 ![alt text](https://github.com/TABLAB-HKUST/U-Frame/blob/3fc619108cf9ab670ab845792ec6f39cb6becc8f/examples/fluo_yusha.jpg)
-The pre-trained model can be downloaded here : [link]()
 
 
-##  Prepare the dataset for training
-To prepare the dataset from the raw data, run the following script:
-```python
-python dataset_prepare.py 
-```
-### Options:
-```--source```	Path of source image.
 
-```--target```	Path of target image.
+##  Datasets 
+The datasets for "Exceeding the Limit for Microscopic Image Transformation with a Deep Learning-based Unified Framework" can be downloaded here:
+- ### (1) Image transformations from widefield images to confocal images:
+  Widefield image: https://drive.google.com/file/d/1Y5gq-alqE0LoHLEOsZYI-Py7g6dmGIwB/view?usp=sharing
+  Single-channel confocal image: https://drive.google.com/file/d/1Fp8mMK_2SBjTktA9p9cbv1rv0NMaCAJh/view?usp=sharing
+  Multi-channel confocal image: https://drive.google.com/file/d/1vNJ9oIg-trZjjClqOrnvXMZfVi9xqJD6/view?usp=sharing
 
-```--output```	Path of output folder.
+- ### (2) Style transformation from autofluorescence images to H&E stained images:
+  Autofluorescence image: https://drive.google.com/file/d/1g-PnQyiRgVKGgoy1ndM9uC14QGDDk5kN/view?usp=sharing
+  H&E image: https://drive.google.com/file/d/1LWR3eYj6bLX16kTD20yKTEfFQaBDK9fd/view?usp=sharing
 
-```--tol```	Tolerance size, i.e. the size of exculsive regions.
+- ### (2) Style transformation from autofluorescence images to Masson’s trichome stained images:
+  Autofluorescence image: https://drive.google.com/file/d/1eVqySKxHAq3t_vG3OnkK3zZ_cgB5BCjB/view?usp=sharing
+  Masson’s trichome image: https://drive.google.com/file/d/1B_4n_PMBJmjf3MWi4JB__-M-sVnkVnvN/view?usp=sharing
 
-
-##  Train a model
-To train a model with prepared dataset, run as:
-```python
-python train.py 
-```
-
-### Options:
-```--ckp```	Model name to be saved in ./checkpoints.
-
-```--dataroot```	The folder of dataset for training.
-
-```--tol```	Tolerance size, i.e. the size of exculsive regions.
-
-```--overlap_size```	Overlapping size among the exculsive regions.
-
-```--batch_size```	Batch size.
-
-```--lr```	Initial learning rate.
-
-```--n_epochs```	Number of epochs for keeping the initial learning rate.
-
-```--n_epochs_decay```	Number of epochs for decaying learning rate.
-
-```--input_size```	Input size of the network.
-
-```--input_dim```	Number of input channels.
-
-```--iter```	Number of iterations per epoch.
-
-```--sobel```	Whether use sobel feature.
-
-```--save_mode```	Save mode, simple | full.
-
-```--tv_dir```	The folder for displaying the results during training.
 
 ## Test a model
 To test images with a trained model, run as:
