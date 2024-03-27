@@ -2,64 +2,6 @@ from torch import nn
 from torch.autograd import Variable
 import torch
 
-class Dis(nn.Module):
-    # discriminator architecture
-    def __init__(self,Nsam,opt):
-        super(Dis, self).__init__()
-        self.n_layer = 4
-        self.gan_type = 'nsgan'
-        self.dim = 64
-        self.norm = 'none'
-        self.activ = 'lrelu'
-        self.num_scales = 3 
-        self.pad_type = 'reflect'
-        self.input_dim = opt.input_dim
-        self.downsample = nn.AvgPool2d(3, stride=2, padding=[1, 1], count_include_pad=False)
-        self.cnns = nn.ModuleList()
-        for _ in range(self.num_scales):
-            self.cnns.append(self._make_net(Nsam))
-        self.logsoft=torch.nn.LogSoftmax(dim=1)
-        self.gamma=opt.gamma
-
-    def _make_net(self,Nsam):
-        dim = self.dim
-        cnn_x = []
-        cnn_x += [Conv2dBlock(self.input_dim, dim, 4, 2, 1, norm='none', activation=self.activ, pad_type=self.pad_type)]
-        for i in range(self.n_layer - 2): # 0,1
-            cnn_x += [Conv2dBlock(dim, dim * 2, 4, 2, 1, norm=self.norm, activation=self.activ, pad_type=self.pad_type)]
-            dim *= 2
-        cnn_x += [Conv2dBlock(dim, dim * 2, 4, 1, 1, norm=self.norm, activation=self.activ, pad_type=self.pad_type)]
-        dim *= 2
-        cnn_x += [nn.Conv2d(dim, Nsam, 4, 1, 1)]
-        cnn_x = nn.Sequential(*cnn_x)
-        return cnn_x
-
-    def criterionS(self,input, target):
-        s=self.logsoft(input)
-        return torch.mean(torch.sum(-target *((1.01-torch.exp(s))**self.gamma)* s, dim=1)) 
-    def forward(self, x):
-        outputs = []
-        for model in self.cnns:
-            outputs.append(model(x))
-            x = self.downsample(x)
-        return outputs
-
-    def calc_dis_loss_semi(self, input_fake, input_real,fake_vect,classLabel):
-        outs0 = self.forward(input_fake)
-        outs1 = self.forward(input_real)
-        loss = 0
-        for it, (out0, out1) in enumerate(zip(outs0, outs1)):
-            loss +=self.criterionS(out0,fake_vect)+self.criterionS(out1,classLabel)
-        return loss
-    
-    def calc_gen_loss_semi(self, input_fake,classLabel):
-        # calculate the loss to train G
-        outs0 = self.forward(input_fake)
-        loss = 0
-        for it, (out0) in enumerate(outs0):
-            loss +=self.criterionS(out0,classLabel)
-        return loss
-
 class Gen(nn.Module):
     # generator architecture
     def __init__(self,input_dim):
