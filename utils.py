@@ -10,49 +10,6 @@ from random import randint
 import cv2
 
 
-class TVLoss(nn.Module):
-    def __init__(self,TVLoss_weight=0.01):
-        super(TVLoss,self).__init__()
-        self.TVLoss_weight = TVLoss_weight
-    def forward(self,x):
-        batch_size = x.size()[0]
-        h_x = x.size()[2]
-        w_x = x.size()[3]
-        count_h = self._tensor_size(x[:,:,1:,:])
-        count_w = self._tensor_size(x[:,:,:,1:])
-        h_tv = torch.pow((x[:,:,1:,:]-x[:,:,:h_x-1,:]),2).sum()
-        w_tv = torch.pow((x[:,:,:,1:]-x[:,:,:,:w_x-1]),2).sum()
-        return self.TVLoss_weight*2*torch.sqrt(h_tv/count_h+w_tv/count_w)/batch_size
-    def _tensor_size(self,t):
-        return t.size()[1]*t.size()[2]*t.size()[3]
-
-def af2rgb(folder,sobel_feature):
-    folder_out='tmp_for_sobel'#%(randint(1,1000000))
-    if not os.path.exists(folder):
-        assert False, 'folder not exist.'
-    if os.path.exists(folder_out):
-        for f in os.listdir(folder_out):
-            os.remove(os.path.join(folder_out, f)) 
-    else:
-        os.makedirs(folder_out)
-    
-    filename=os.listdir(folder)
-    for i, f in enumerate(filename):
-        x=cv2.imread('%s/%s'%(folder,f),1)
-        h,w=x.shape[:2]
-        xgray=x[:,:int(w/2),0]
-        sobelx = cv2.Sobel(xgray, cv2.CV_64F, 1, 0)
-        sobely = cv2.Sobel(xgray, cv2.CV_64F, 0, 1)
-        sobelx=(sobelx/1000+1)*255/2
-        sobely=(sobely/1000+1)*255/2
-        sobelx=cv2.convertScaleAbs(sobelx)
-        sobely=cv2.convertScaleAbs(sobely)
-        #s.append([sobelx,sobely])
-        if sobel_feature==True:
-            x[:,:int(w/2),:]=np.stack((xgray,sobelx,sobely),axis=2)
-        cv2.imwrite('%s/%d.png'%(folder_out,i+1),x)
-    return folder_out
-
 def af2rgb_test(af,af_out,sobel_feature):
     img=cv2.imread(af,1)
     if sobel_feature==True:
