@@ -26,16 +26,16 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 
 ##  Datasets 
 The datasets for "Exceeding the Limit for Microscopic Image Transformation with a Deep Learning-based Unified Framework" can be downloaded in the following links:
-- ### (1) Image transformations from widefield images to confocal images:
+- ### Image transformations from widefield images to confocal images:
   #### Widefield image: https://drive.google.com/file/d/1Y5gq-alqE0LoHLEOsZYI-Py7g6dmGIwB/view?usp=sharing
   #### Single-channel confocal image: https://drive.google.com/file/d/1Fp8mMK_2SBjTktA9p9cbv1rv0NMaCAJh/view?usp=sharing
   #### Multi-channel confocal image: https://drive.google.com/file/d/1vNJ9oIg-trZjjClqOrnvXMZfVi9xqJD6/view?usp=sharing
 
-- ### (2) Style transformation from autofluorescence images to H&E stained images:
+- ### Style transformation from autofluorescence images to H&E stained images:
   #### Autofluorescence image: https://drive.google.com/file/d/1g-PnQyiRgVKGgoy1ndM9uC14QGDDk5kN/view?usp=sharing
   #### H&E image: https://drive.google.com/file/d/1LWR3eYj6bLX16kTD20yKTEfFQaBDK9fd/view?usp=sharing
 
-- ### (2) Style transformation from autofluorescence images to Masson’s trichome stained images:
+- ### Style transformation from autofluorescence images to Masson’s trichome stained images:
   #### Autofluorescence image: https://drive.google.com/file/d/1eVqySKxHAq3t_vG3OnkK3zZ_cgB5BCjB/view?usp=sharing
   #### Masson’s trichome image: https://drive.google.com/file/d/1B_4n_PMBJmjf3MWi4JB__-M-sVnkVnvN/view?usp=sharing
 
