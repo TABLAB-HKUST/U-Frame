@@ -25,7 +25,7 @@ This is a pytorch implementation of U-Frame, proposed in "Exceeding the Limit fo
 
 
 ##  Datasets 
-The datasets for "Exceeding the Limit for Microscopic Image Transformation with a Deep Learning-based Unified Framework" can be downloaded here:
+The datasets for "Exceeding the Limit for Microscopic Image Transformation with a Deep Learning-based Unified Framework" can be downloaded in the following links:
 - ### (1) Image transformations from widefield images to confocal images:
   #### Widefield image: https://drive.google.com/file/d/1Y5gq-alqE0LoHLEOsZYI-Py7g6dmGIwB/view?usp=sharing
   #### Single-channel confocal image: https://drive.google.com/file/d/1Fp8mMK_2SBjTktA9p9cbv1rv0NMaCAJh/view?usp=sharing
@@ -40,7 +40,7 @@ The datasets for "Exceeding the Limit for Microscopic Image Transformation with 
   #### Masson’s trichome image: https://drive.google.com/file/d/1B_4n_PMBJmjf3MWi4JB__-M-sVnkVnvN/view?usp=sharing
 
 
-## Test a model
+## Test
 To test images with a trained model, run as:
 ```python
 python test.py 
